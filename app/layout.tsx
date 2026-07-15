@@ -1,6 +1,22 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Container from "@/components/container";
+import Navbar from "@/components/navbar";
+import ScrollRestoration from "@/components/ScrollRestoration";
+import { Inter, Poppins } from "next/font/google";
+import Contact from "@/components/contact";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-poppins",
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,9 +41,17 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${inter.variable} ${poppins.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col bg-neutral-950 text-white">
+        {/* <ScrollRestoration /> */}
+
+        <Container>
+          <Navbar />
+          {children}
+          <Contact />
+        </Container>
+      </body>
     </html>
   );
 }
