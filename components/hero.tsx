@@ -52,8 +52,7 @@ const Hero = () => {
           </motion.div>
         }
       </AnimatePresence>
-      <div className="mt-6 font-inter">noida</div>
-      <h1 className="font-poppins text-2xl font-bold leading-6 text-neutral-50 ">
+      <h1 className="mt-6 font-poppins text-2xl font-bold leading-6 text-neutral-50 ">
         Hi, I am <span className="text-primary">Anuj Dobiyal</span> 👋
       </h1>
       <AnimatePresence>
