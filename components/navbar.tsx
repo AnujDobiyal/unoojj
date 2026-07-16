@@ -77,7 +77,7 @@ const Navbar = () => {
           <Link
             key={link.href}
             href={link.href}
-            className="font-poppins text-sm text-neutral-700 hover:text-neutral-950  font-medium tracking-tight"
+            className="font-poppins text-xs md:text-sm text-neutral-700 hover:text-neutral-950  font-medium tracking-tight"
           >
             {link.name}
           </Link>
