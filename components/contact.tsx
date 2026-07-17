@@ -42,7 +42,7 @@ const Contact = () => {
         <Link href="mailto:anujdobiyal@gmail.com" className="flex font-poppins  items-center gap-2 border-2 rounded-lg border-neutral-950 text-neutral-950 px-4 py-2.5 font-bold tracking-wide cursor-pointer">
           anujdobiyal@gmail.com <LinkSvg className="invert" />{" "}
         </Link>
-        <Link href={resume} target="_blank" className="flex items-center font-poppins bg-neutral-950 rounded-lg text-primary px-4 py-2.5 font-bold tracking-wide cursor-pointer">
+        <Link href={resume} target="_blank" className="flex items-center justify-center font-poppins bg-neutral-950 rounded-lg text-primary px-4 py-2.5 font-bold tracking-wide cursor-pointer">
           Resume
         </Link>
       </div>
